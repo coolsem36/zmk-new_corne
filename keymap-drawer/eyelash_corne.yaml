@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Q
   - W
   - E
@@ -13,8 +13,8 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - A
   - S
   - D
@@ -28,8 +28,8 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
   - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn}
@@ -197,5 +197,29 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
+- p: [1, 2]
+  k: $$mdi:keyboard-esc$$
+- p: [10, 11]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [4, 5]
+  k: '1'
+- p: [16, 17]
+  k: '2'
+- p: [17, 18]
+  k: '3'
+- p: [31, 32]
+  k: '4'
+- p: [32, 33]
+  k: {t: '5', s: '%'}
+- p: [22, 23]
+  k: '6'
+- p: [23, 24]
+  k: {t: '7', s: '&'}
+- p: [24, 25]
+  k: {t: '8', s: '*'}
+- p: [36, 37]
+  k: {t: '9', s: (}
+- p: [37, 38]
+  k: {t: '0', s: )}
+- p: [47, 40]
+  k: $$mdi:arrow-down-bold$$
